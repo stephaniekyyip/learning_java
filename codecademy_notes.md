@@ -53,6 +53,47 @@
 
 ### Conditionals and Control Flow
 
+- Boolean operators: `&&, ||, !` (and, or, not)
+
+  - Precedence (order of evaluation)): 1) `!`. 2) `&&`, 3) `||`
+
+- If-else statements
+
+```java
+if (...){
+  ...
+} else if (...){
+  ...
+} else {
+  
+}
+```
+
+- Ternary conditional
+
+  - Shorter if/else statemen that returns a value depending on the result of a boolean expression
+
+```java
+int points = 21;
+char result = (points > 20) ? 'win' : 'loss'; // win
+```
+
+- Switch statement
+
+```java
+switch(var){
+    
+  case 1: ...
+    break;
+   
+  case 2: ...
+    break;
+  
+  default: ...
+  	break;
+}
+```
+
 
 
 
