@@ -152,3 +152,66 @@ class Vehicle {
   }
 }
 ```
+
+---
+
+### Data Structures
+
+- For loop
+
+```java
+for(int counter = 0; counter < 5; counter++){
+  ...
+}
+```
+
+- ArrayList: 
+
+  - Pre-defined Java class. Need to create an ArrayList object to use.
+
+  - Stores a list of data of a specified type.
+
+  - Starts with an index of 0.
+
+```java
+ArrayList<Integer> guizGrades = new ArrayList<Integer>();
+quizGrades.add(95);
+quizGrades.add(87);
+quizGrades.add(0, 100); // Inserts value of 100 at index 0, shifting the indices of the rest of the elements in the ArrayList by one
+
+System.out.println(quizGrades.get(0)); //Gets the value at index 0
+
+for(int i = 0; i < quizGrades.size(); i++){ // `size` method returns an int w/ the total elements in the ArrayList
+  System.out.println(quizGrades.get(i));
+}
+```
+
+- For Each Loop
+
+  - Shortcut for a for loop
+
+```java
+for(Integer grade: quizGrades){ // where `grade` is the iterator and `quizGrades is the ArrayList`
+  System.out.println(grade);
+}
+```
+
+- HashMap
+
+  - Contains a set of keys and a value for each key
+
+  ```java
+  HashMap<String, Integer> myFriends = new HashMap<String, Integer>(); // Stores keys with type `String` and values of type `Integer`
+  
+  myFriends.put("Mark", 24);
+  myFriends.put("Cassie", 25);
+  
+  System.out.println(myFriends.get("Cassie")); // Prints out `25`
+  
+  System.out.println(myFriends.size()); // Number of key-value pairs
+  
+  for(String name: myFriends.keySet()){ // `keyset` returns list of keys
+    System.out.println(name + " is age: " + myFriends.get(name));
+  }
+  
+  ```
